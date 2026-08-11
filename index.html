@@ -69,8 +69,12 @@
     <div class="hero-eyebrow">Kuala Lumpur · Event Management Co.</div>
     <h1>Events with<br>a<span class="accent">bold</span><br>pulse</h1>
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary">
-        Start Your Project
+      <a href="#contact" class="btn-primary"
+        onclick="gtag('event', 'cta_click', {
+          'event_category': 'engagement',
+          'event_label': 'start_your_project'
+          });">
+            Start Your Project
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <a href="#work" class="btn-ghost">
