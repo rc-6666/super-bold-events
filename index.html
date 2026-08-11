@@ -273,7 +273,11 @@
       <div>
         <h2 class="reveal">Let's create<br>something <span class="accent">bold</span><br>together.</h2>
         <div class="contact-actions reveal">
-          <a href="mailto:carmen.superbold@outlook.com" class="btn-primary">
+          <a href="mailto:hello.superbold@outlook.com" class="btn-primary"
+            onclick="gtag('event', 'email_click', {
+              'event_category': 'lead',
+              'event_label': 'carmen_email'
+            });">
             Contact Us Now
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
@@ -283,7 +287,11 @@
         <div class="stamp"><img src="images/icons/paw.svg" alt="Super Bold paw mark"></div>
         <div class="contact-details">
           <a href="tel:+60113088268">+6011 - 3088 2688</a><br>
-          <a href="mailto:hello.superbold@outlook.com">hello.superbold@outlook.com</a><br>
+          <a href="mailto:hello.superbold@outlook.com"
+            onclick="gtag('event', 'email_click', {
+             'event_category': 'lead',
+             'event_label': 'general_email'
+            });">hello.superbold@outlook.com</a><br>
           No.2A, Jalan Kuchai Jaya 10,<br>Taman Kuchai Jaya, 58200 Kuala Lumpur
         </div>
       </div>
