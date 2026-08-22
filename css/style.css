@@ -549,10 +549,13 @@
     line-height:1.05;
   }
   .work-card .backdrop{
+    position:relative;
     overflow:hidden;
   }
 
   .work-card .backdrop img{
+    position:absolute;
+    inset:0;
     width:100%;
     height:100%;
     display:block;
