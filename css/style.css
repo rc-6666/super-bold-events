@@ -620,52 +620,55 @@
   }
   .contact-details a:hover{color:var(--red);}
 
-  @media (max-width:860px){
-    .contact-inner{grid-template-columns:1fr; gap:56px;}
-    .stamp-wrap{align-items:flex-start;}
-    .contact-details{text-align:left;}
+/* ===== SOCIAL ICONS ===== */
+  .social-links{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:12px;
+    margin-top:24px;
   }
 
-  /* SOCIAL ICONS */
-  .social-links {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 24px;
-  }
+  .social-links a{
+    width:40px;
+    height:40px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
 
-  .social-links a {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    border:1px solid rgba(244,244,239,0.45);
+    border-radius:50%;
 
-    border: 1px solid currentColor;
-    border-radius: 50%;
-
-    color: inherit;
-    text-decoration: none;
+    color:var(--white);
+    text-decoration:none;
 
     transition:
-      transform 0.25s ease,
-      background-color 0.25s ease,
-      color 0.25s ease;
+      transform .25s ease,
+      background-color .25s ease,
+      color .25s ease,
+      border-color .25s ease;
   }
 
-  .social-links svg {
-    width: 18px;
-    height: 18px;
+  .social-links svg{
+    width:18px;
+    height:18px;
 
-    fill: currentColor;
-    stroke: currentColor;
-    stroke-width: 1.5;
+    fill:currentColor;
+    stroke:currentColor;
+    stroke-width:1.5;
   }
 
-  .social-links a:hover {
-    transform: translateY(-3px);
-    background-color: currentColor;
-    color: #fff;
+  .social-links a:hover{
+    background:var(--red);
+    border-color:var(--red);
+    color:var(--white);
+    transform:translateY(-3px);
+  }
+
+  @media (max-width:860px){
+    .social-links{
+      justify-content:flex-start;
+    }
   }
 
   /* ===== FOOTER ===== */
