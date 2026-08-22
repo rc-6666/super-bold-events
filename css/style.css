@@ -667,6 +667,20 @@
   }
 
   @media (max-width:860px){
+    .contact-inner{
+      grid-template-columns:1fr;
+      gap:56px;
+    }
+
+    .stamp-wrap{
+      align-items:flex-start;
+      width:100%;
+    }
+
+    .contact-details{
+      text-align:left;
+    }
+
     .social-links{
       justify-content:flex-start;
     }
