@@ -549,13 +549,13 @@
     line-height:1.05;
   }
   .work-card .backdrop{
-    position:relative;
+    position:absolute;
+    inset:0;
     overflow:hidden;
+    z-index:0;
   }
 
   .work-card .backdrop img{
-    position:absolute;
-    inset:0;
     width:100%;
     height:100%;
     display:block;
@@ -563,6 +563,11 @@
     object-position:center;
   }
 
+  .work-card > *:not(.backdrop){
+    position:relative;
+    z-index:1;
+  }
+  
   @media (max-width:900px){
     .work-grid{grid-template-columns:1fr;}
     .work-card.c1,.work-card.c2,.work-card.c3,.work-card.c4{grid-column:span 1; min-height:260px;}
