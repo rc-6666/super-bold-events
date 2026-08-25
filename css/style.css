@@ -422,9 +422,12 @@
   }
   .run-title{
     font-family:var(--display);
-    font-size:clamp(24px,3.4vw,40px);
     text-transform:uppercase;
-    letter-spacing:-0.3px;
+    text-decoration:none;
+    color:inherit;
+  }
+  .run-tile:hover{
+    color:var(--red);
   }
   .run-desc{
     font-size:15px;
