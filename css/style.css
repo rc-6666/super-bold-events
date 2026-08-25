@@ -730,3 +730,34 @@
     transition:opacity .8s ease, transform .8s ease;
   }
   .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ===== SERVICE PAGE NAV ===== */
+  .service-page header{
+    color:var(--black);
+  }
+
+  .service-page header .nav-mark{
+    color:var(--black);
+  }
+
+  .service-page header nav a{
+    color:var(--black);
+  }
+
+  .service-page header nav a:hover{
+    color:var(--red);
+  }
+
+  .service-page header .nav-cta{
+    color:var(--black);
+    border-color:var(--black);
+  }
+
+  .service-page header .nav-cta:hover{
+    background:var(--black);
+    color:var(--paper);
+  }
+
+  .service-page header .mobile-toggle{
+    color:var(--black);
+  }
