@@ -31,9 +31,329 @@
 
     gtag('config', 'G-CXPTDCN68T');
   </script>
+
+  <style>
+    /* ===== SERVICE PAGE ===== */
+
+    .service-page{
+      background:var(--paper);
+      color:var(--black);
+    }
+
+    .service-hero{
+      padding:150px 0 110px;
+      border-bottom:1px solid rgba(0,0,0,0.12);
+    }
+
+    .service-hero-inner{
+      max-width:1000px;
+    }
+
+    .service-hero .eyebrow{
+      margin-bottom:28px;
+    }
+
+    .service-hero h1{
+      font-family:var(--display);
+      font-size:clamp(58px,9vw,132px);
+      text-transform:uppercase;
+      line-height:.9;
+      letter-spacing:-2px;
+      max-width:900px;
+    }
+
+    .service-hero h1 .accent{
+      color:var(--red);
+    }
+
+    .service-hero-copy{
+      max-width:720px;
+      margin-top:34px;
+      color:rgba(12,12,12,.68);
+      font-size:18px;
+      line-height:1.7;
+    }
+
+    .service-hero-actions{
+      display:flex;
+      gap:14px;
+      margin-top:38px;
+      flex-wrap:wrap;
+    }
+
+    .service-section{
+      padding:120px 0;
+    }
+
+    .service-section + .service-section{
+      border-top:1px solid rgba(0,0,0,.10);
+    }
+
+    .service-section-head{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      margin-bottom:60px;
+    }
+
+    .service-section-head h2{
+      font-family:var(--display);
+      font-size:clamp(42px,6vw,80px);
+      text-transform:uppercase;
+      line-height:.94;
+      letter-spacing:-1px;
+    }
+
+    .service-section-head p{
+      max-width:520px;
+      align-self:end;
+      color:rgba(12,12,12,.68);
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    .service-intro{
+      display:grid;
+      grid-template-columns:1.25fr 1fr;
+      gap:70px;
+      align-items:start;
+    }
+
+    .service-intro-lede{
+      font-size:clamp(30px,4vw,52px);
+      line-height:1.05;
+      letter-spacing:-1px;
+    }
+
+    .service-intro-lede .accent{
+      color:var(--red);
+    }
+
+    .service-list{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:0;
+      border-top:1px solid rgba(0,0,0,.16);
+    }
+
+    .service-list-item{
+      padding:24px 0;
+      border-bottom:1px solid rgba(0,0,0,.16);
+    }
+
+    .service-list-item:nth-child(odd){
+      padding-right:30px;
+      border-right:1px solid rgba(0,0,0,.16);
+    }
+
+    .service-list-item:nth-child(even){
+      padding-left:30px;
+    }
+
+    .service-list-number{
+      display:block;
+      font-family:var(--mono);
+      font-size:11px;
+      letter-spacing:1.5px;
+      color:var(--red);
+      margin-bottom:10px;
+    }
+
+    .service-list-item h3{
+      font-family:var(--display);
+      font-size:clamp(22px,2.5vw,32px);
+      text-transform:uppercase;
+      line-height:1;
+      margin-bottom:12px;
+    }
+
+    .service-list-item p{
+      color:rgba(12,12,12,.65);
+      font-size:15px;
+      line-height:1.65;
+      max-width:420px;
+    }
+
+    .service-work{
+      display:grid;
+      grid-template-columns:1.35fr .65fr;
+      gap:20px;
+    }
+
+    .service-work-main,
+    .service-work-side{
+      border-radius:6px;
+      overflow:hidden;
+      background:var(--card);
+      min-height:420px;
+      position:relative;
+    }
+
+    .service-work-main img{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:cover;
+      object-position:center;
+    }
+
+    .service-work-side{
+      display:flex;
+      align-items:flex-end;
+      padding:28px;
+      color:var(--paper);
+    }
+
+    .service-work-side-label{
+      font-family:var(--mono);
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+      color:var(--red);
+      margin-bottom:10px;
+    }
+
+    .service-work-side h3{
+      font-family:var(--display);
+      font-size:clamp(28px,3.5vw,48px);
+      text-transform:uppercase;
+      line-height:.95;
+    }
+
+    .service-cta{
+      background:var(--black);
+      color:var(--paper);
+      padding:130px 0;
+    }
+
+    .service-cta-inner{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:60px;
+      align-items:end;
+    }
+
+    .service-cta h2{
+      font-family:var(--display);
+      font-size:clamp(48px,7vw,96px);
+      text-transform:uppercase;
+      line-height:.92;
+      letter-spacing:-1px;
+    }
+
+    .service-cta h2 .accent{
+      color:var(--red);
+    }
+
+    .service-cta-copy{
+      color:rgba(244,244,239,.65);
+      font-size:16px;
+      line-height:1.7;
+      margin-top:24px;
+      max-width:540px;
+    }
+
+    .service-cta-actions{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:flex-start;
+    }
+
+    .service-cta-actions a{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    @media (max-width:900px){
+
+      .service-hero{
+        padding:120px 0 80px;
+      }
+
+      .service-hero h1{
+        font-size:clamp(52px,14vw,88px);
+      }
+
+      .service-section{
+        padding:90px 0;
+      }
+
+      .service-section-head{
+        grid-template-columns:1fr;
+        gap:24px;
+        margin-bottom:44px;
+      }
+
+      .service-intro{
+        grid-template-columns:1fr;
+        gap:44px;
+      }
+
+      .service-list{
+        grid-template-columns:1fr;
+      }
+
+      .service-list-item:nth-child(odd){
+        padding-right:0;
+        border-right:0;
+      }
+
+      .service-list-item:nth-child(even){
+        padding-left:0;
+      }
+
+      .service-work{
+        grid-template-columns:1fr;
+      }
+
+      .service-work-main,
+      .service-work-side{
+        min-height:300px;
+      }
+
+      .service-cta{
+        padding:90px 0;
+      }
+
+      .service-cta-inner{
+        grid-template-columns:1fr;
+        gap:40px;
+      }
+
+      .service-cta-actions{
+        align-items:stretch;
+      }
+    }
+
+    @media (max-width:600px){
+
+      .service-hero-actions{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .service-hero-actions a{
+        justify-content:center;
+      }
+
+      .service-list-item{
+        padding:22px 0;
+      }
+
+      .service-work-main{
+        min-height:260px;
+      }
+
+      .service-work-side{
+        min-height:240px;
+      }
+    }
+  </style>
 </head>
 
-<body>
+<body class="service-page">
 
 <header>
   <div class="nav-mark">
@@ -69,274 +389,202 @@
 </div>
 
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-
-    <div class="hero-eyebrow">
-      Kuala Lumpur · Corporate Event Management
-    </div>
-
-    <h1>
-      Corporate<br>
-      events,<br>
-      <span class="accent">built bold.</span>
-    </h1>
-
-    <p class="hero-description">
-      Super Bold Events is a Malaysia-based corporate event management company
-      delivering conferences, annual dinners, product launches, grand openings,
-      brand activations and business events from planning through execution.
-    </p>
-
-    <div class="hero-actions">
-
-      <a
-        href="../../#contact"
-        class="btn-primary"
-        onclick="gtag('event', 'cta_click', {
-          'event_category': 'engagement',
-          'event_label': 'corporate_events_project'
-        });"
-      >
-        Start Your Project
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2.5">
-          <path d="M5 12h14M13 6l6 6-6 6"/>
-        </svg>
-      </a>
-
-      <a href="#event-types" class="btn-ghost">
-        Explore services
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2.5">
-          <path d="M5 12h14M13 6l6 6-6 6"/>
-        </svg>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- INTRO -->
-<section class="about" id="event-types">
+<!-- SERVICE HERO -->
+<section class="service-hero">
   <div class="wrap">
+    <div class="service-hero-inner">
 
-    <span class="eyebrow reveal">What we deliver</span>
+      <span class="eyebrow">
+        Services / Corporate Events
+      </span>
 
-    <div class="about-grid">
+      <h1>
+        Corporate Events,<br>
+        <span class="accent">Built Bold.</span>
+      </h1>
 
-      <p class="about-lede reveal">
-        Corporate events should do more than fill a room.
-        <span class="redword">
-          They should move people, support your objectives and leave a lasting impression.
-        </span>
+      <p class="service-hero-copy">
+        Super Bold Events is a Malaysia-based corporate event management
+        company delivering conferences, annual dinners, product launches,
+        grand openings, brand activations and business events from planning
+        through execution.
       </p>
 
-      <div class="about-stats reveal">
+      <div class="service-hero-actions">
 
-        <div class="about-stat">
-          <span class="num">01</span>
-          <span class="label">Annual Dinners</span>
-        </div>
+        <a
+          href="https://wa.me/60113088268"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary"
+          onclick="gtag('event', 'whatsapp_click', {
+            'event_category': 'lead',
+            'event_label': 'corporate_events_whatsapp'
+          });"
+        >
+          Chat on WhatsApp
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </a>
 
-        <div class="about-stat">
-          <span class="num">02</span>
-          <span class="label">Conferences & Summits</span>
-        </div>
-
-        <div class="about-stat">
-          <span class="num">03</span>
-          <span class="label">Product Launches</span>
-        </div>
-
-        <div class="about-stat">
-          <span class="num">04</span>
-          <span class="label">Grand Openings</span>
-        </div>
+        <a href="#event-types" class="btn-ghost">
+          Explore event types
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </a>
 
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
 
-<!-- SERVICES -->
-<section class="services">
+<!-- WHAT WE DELIVER -->
+<section class="service-section">
   <div class="wrap">
 
-    <div class="section-head">
+    <div class="service-section-head">
       <div>
-        <span class="eyebrow reveal">Corporate Event Types</span>
-        <h2 class="reveal">
-          Built around<br>
-          your objective.
-        </h2>
+        <span class="eyebrow">What we deliver</span>
+        <h2>Corporate events should do more than fill a room.</h2>
       </div>
 
-      <p class="reveal">
-        From formal corporate gatherings to high-energy launches,
-        we bring planning, creative, production and execution together
-        under one team.
+      <p>
+        We bring planning, creative direction, production, logistics and
+        execution together under one team, so the event works as both an
+        experience and a business tool.
       </p>
     </div>
 
+    <div class="service-intro">
 
-    <div class="runlist">
+      <p class="service-intro-lede">
+        From the first brief to the final cue,
+        <span class="accent">we keep the whole picture moving.</span>
+      </p>
 
-      <div class="run-row reveal">
-        <span class="run-time">01</span>
-        <div>
-          <h3 class="run-title">Annual Dinner</h3>
-          <p class="run-desc">
-            Memorable company dinners designed around your people,
+      <div class="service-list">
+
+        <div class="service-list-item">
+          <span class="service-list-number">01</span>
+          <h3>Annual Dinner</h3>
+          <p>
+            Corporate celebrations shaped around your people,
             culture and brand.
           </p>
         </div>
-        <span class="run-arrow">→</span>
-      </div>
 
-
-      <div class="run-row reveal">
-        <span class="run-time">02</span>
-        <div>
-          <h3 class="run-title">Conference & Summit</h3>
-          <p class="run-desc">
+        <div class="service-list-item">
+          <span class="service-list-number">02</span>
+          <h3>Conference & Summit</h3>
+          <p>
             End-to-end planning and production for conferences,
             summits and business gatherings.
           </p>
         </div>
-        <span class="run-arrow">→</span>
-      </div>
 
-
-      <div class="run-row reveal">
-        <span class="run-time">03</span>
-        <div>
-          <h3 class="run-title">Product Launch</h3>
-          <p class="run-desc">
-            Strategic launches that connect your product,
-            message and audience in one experience.
+        <div class="service-list-item">
+          <span class="service-list-number">03</span>
+          <h3>Product Launch</h3>
+          <p>
+            Launch experiences built around your product,
+            message and audience.
           </p>
         </div>
-        <span class="run-arrow">→</span>
-      </div>
 
-
-      <div class="run-row reveal">
-        <span class="run-time">04</span>
-        <div>
-          <h3 class="run-title">Grand Opening</h3>
-          <p class="run-desc">
-            Opening experiences designed to create attention,
-            energy and a strong first impression.
+        <div class="service-list-item">
+          <span class="service-list-number">04</span>
+          <h3>Grand Opening</h3>
+          <p>
+            Strong first impressions designed to create attention
+            and momentum from day one.
           </p>
         </div>
-        <span class="run-arrow">→</span>
-      </div>
 
-
-      <div class="run-row reveal">
-        <span class="run-time">05</span>
-        <div>
-          <h3 class="run-title">Brand Activation</h3>
-          <p class="run-desc">
-            Experiential activations that give audiences
-            something worth remembering.
+        <div class="service-list-item">
+          <span class="service-list-number">05</span>
+          <h3>Brand Activation</h3>
+          <p>
+            Experiential moments designed to connect audiences
+            with your brand.
           </p>
         </div>
-        <span class="run-arrow">→</span>
-      </div>
 
-
-      <div class="run-row reveal">
-        <span class="run-time">06</span>
-        <div>
-          <h3 class="run-title">Roadshow</h3>
-          <p class="run-desc">
-            Multi-location experiences planned with consistent
-            execution, logistics and brand presence.
+        <div class="service-list-item">
+          <span class="service-list-number">06</span>
+          <h3>Roadshow</h3>
+          <p>
+            Multi-location events with consistent execution,
+            logistics and brand presence.
           </p>
         </div>
-        <span class="run-arrow">→</span>
-      </div>
 
-
-      <div class="run-row reveal">
-        <span class="run-time">07</span>
-        <div>
-          <h3 class="run-title">Awards & Recognition</h3>
-          <p class="run-desc">
-            Awards nights and recognition events that put
-            your people and achievements in the spotlight.
+        <div class="service-list-item">
+          <span class="service-list-number">07</span>
+          <h3>Awards & Recognition</h3>
+          <p>
+            Recognition events that put your people and
+            achievements in the spotlight.
           </p>
         </div>
-        <span class="run-arrow">→</span>
-      </div>
 
+        <div class="service-list-item">
+          <span class="service-list-number">08</span>
+          <h3>Client Appreciation</h3>
+          <p>
+            Thoughtful business events designed to strengthen
+            relationships and leave a lasting impression.
+          </p>
+        </div>
+
+      </div>
     </div>
+
   </div>
 </section>
 
 
-<!-- WHY SUPER BOLD -->
-<section class="approach">
+<!-- SELECTED WORK -->
+<section class="service-section">
   <div class="wrap">
 
-    <div class="section-head">
+    <div class="service-section-head">
       <div>
-        <span class="eyebrow reveal">Why Super Bold</span>
-        <h2 class="reveal">
-          Built to<br>
-          deliver.
-        </h2>
+        <span class="eyebrow">Selected work</span>
+        <h2>Proof in the room.</h2>
       </div>
+
+      <p>
+        A glimpse of the work we produce across corporate,
+        brand and business events.
+      </p>
     </div>
 
-  </div>
+    <div class="service-work">
 
-  <div class="wrap" style="padding:0;">
-
-    <div class="approach-grid">
-
-      <div class="approach-card reveal">
-        <h3>A-Z Solutions</h3>
-        <span class="approach-num"></span>
-        <p>
-          You bring the brief. We handle the rest.
-          Every event element comes together under one team,
-          from planning to execution.
-        </p>
+      <div class="service-work-main">
+        <img
+          src="../../images/portfolio/proton-go-202607.jpg"
+          alt="Proton Grand Opening event by Super Bold Events"
+        >
       </div>
 
-      <div class="approach-card reveal">
-        <h3>Personalized Services</h3>
-        <span class="approach-num"></span>
-        <p>
-          No copy-paste packages.
-          We tailor the concept, experience and execution
-          around your objectives, audience and brand.
-        </p>
-      </div>
+      <div class="service-work-side">
+        <div>
+          <div class="service-work-side-label">
+            Corporate Event
+          </div>
 
-      <div class="approach-card reveal">
-        <h3>Proven Competence</h3>
-        <span class="approach-num"></span>
-        <p>
-          We stay on top of timelines, vendors, logistics
-          and the details that keep the show moving.
-        </p>
-      </div>
-
-      <div class="approach-card reveal">
-        <h3>Transparent Budget</h3>
-        <span class="approach-num"></span>
-        <p>
-          Clear costing, smart recommendations and
-          purposeful investment from planning to delivery.
-        </p>
+          <h3>
+            Proton<br>
+            Grand Opening
+          </h3>
+        </div>
       </div>
 
     </div>
@@ -345,40 +593,77 @@
 </section>
 
 
-<!-- CTA -->
-<section class="contact">
+<!-- CONTACT CTA -->
+<section class="service-cta">
   <div class="wrap">
-    <div class="contact-inner">
+
+    <div class="service-cta-inner">
 
       <div>
-        <h2 class="reveal">
+        <h2>
           Planning your next<br>
           corporate <span class="accent">event?</span>
         </h2>
 
-        <div class="contact-actions reveal">
+        <p class="service-cta-copy">
+          Tell us what you're planning, what needs to happen,
+          and what has to go right. We'll build the rest with you.
+        </p>
+      </div>
 
-          <a
-            href="https://wa.me/60113088268"
-            target="_blank"
-            rel="noopener"
-            class="btn-primary"
-            onclick="gtag('event', 'whatsapp_click', {
-              'event_category': 'lead',
-              'event_label': 'corporate_events_whatsapp'
-            });"
-          >
-            Chat on WhatsApp
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2.5">
-              <path d="M5 12h14M13 6l6 6-6 6"/>
-            </svg>
-          </a>
+      <div class="service-cta-actions">
 
-        </div>
+        <a
+          href="https://wa.me/60113088268"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary"
+          onclick="gtag('event', 'whatsapp_click', {
+            'event_category': 'lead',
+            'event_label': 'corporate_events_cta_whatsapp'
+          });"
+        >
+          Chat on WhatsApp
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </a>
+
+        <a
+          href="mailto:hello.superbold@outlook.com"
+          class="btn-ghost"
+          onclick="gtag('event', 'email_click', {
+            'event_category': 'lead',
+            'event_label': 'corporate_events_email'
+          });"
+        >
+          Email Us
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </a>
+
+        <a
+          href="tel:+601130882688"
+          class="btn-ghost"
+          onclick="gtag('event', 'phone_click', {
+            'event_category': 'lead',
+            'event_label': 'corporate_events_phone'
+          });"
+        >
+          +6011 - 3088 2688
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </a>
+
       </div>
 
     </div>
+
   </div>
 </section>
 
