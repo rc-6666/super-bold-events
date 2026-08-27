@@ -426,7 +426,7 @@
     text-decoration:none;
     color:inherit;
   }
-  .run-tile:hover{
+  .run-title:hover{
     color:var(--red);
   }
   .run-desc{
@@ -735,8 +735,12 @@
   .service-page header{
     background:var(--black);
     color:var(--paper);
-    position:relative;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
     z-index:100;
+    mix-blend-mode:normal;
   }
 
   .service-page header .nav-mark{
