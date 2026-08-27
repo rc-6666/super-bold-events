@@ -733,40 +733,42 @@
 
   /* ===== SERVICE PAGE NAV ===== */
   .service-page header{
-    background:var(--black);
-    color:var(--paper);
+    background:#0A0A0A !important;
+    color:#F4F4EF;
     position:fixed;
     top:0;
     left:0;
     right:0;
     z-index:100;
     mix-blend-mode:normal;
+    opacity:1;
   }
 
   .service-page header .nav-mark{
-    color:var(--paper);
+    color:#F4F4EF;
   }
 
   .service-page header nav a{
-    color:var(--paper);
+    color:#F4F4EF;
   }
 
   .service-page header nav a:hover{
-    color:var(--red);
+    color:#E5261B;
   }
 
   .service-page header .nav-cta{
-    color:var(--paper);
-    border-color:var(--paper);
+    color:#F4F4EF;
+    border-color:#F4F4EF;
   }
 
   .service-page header .nav-cta:hover{
-    background:var(--paper);
-    color:var(--black);
+    background:#F4F4EF;
+    color:#0A0A0A;
   }
 
   .service-page header .mobile-toggle{
-    color:var(--paper);
+    color:#F4F4EF;
+    border-color:#F4F4EF;
   }
 
   .service-page .mobile-menu{
