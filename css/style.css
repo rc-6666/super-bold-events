@@ -732,18 +732,19 @@
   .reveal.in{opacity:1; transform:translateY(0);}
 
   /* ===== SERVICE PAGE NAV ===== */
-  .nav-mark{
-    text-decoration:none;
-    color:inherit;
-  }
-
   .service-page header{
-    color:var(--black);
+    background:var(--black);
+    color:var(--paper);
+    position:relative;
+    z-index:100;
   }
 
-  .service-page header .nav-mark,
+  .service-page header .nav-mark{
+    color:var(--paper);
+  }
+
   .service-page header nav a{
-    color:var(--black);
+    color:var(--paper);
   }
 
   .service-page header nav a:hover{
@@ -751,15 +752,28 @@
   }
 
   .service-page header .nav-cta{
-    color:var(--black);
-    border-color:var(--black);
+    color:var(--paper);
+    border-color:var(--paper);
   }
 
   .service-page header .nav-cta:hover{
+    background:var(--paper);
+    color:var(--black);
+  }
+
+  .service-page header .mobile-toggle{
+    color:var(--paper);
+  }
+
+  .service-page .mobile-menu{
     background:var(--black);
     color:var(--paper);
   }
 
-  .service-page header .mobile-toggle{
-    color:var(--black);
+  .service-page .mobile-menu a{
+    color:var(--paper);
+  }
+
+  .service-page .mobile-menu a:hover{
+    color:var(--red);
   }
