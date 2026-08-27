@@ -55,11 +55,14 @@
     position:fixed;
     top:0; left:0; right:0;
     z-index:100;
-    padding:22px 32px;
+    padding:16px 32px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    mix-blend-mode:difference;
+    background:rgba(10,10,10,0.88);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(244,244,239,0.08);  
   }
   .nav-mark{
     display:flex;
@@ -733,7 +736,8 @@
 
   /* ===== SERVICE PAGE NAV ===== */
   .service-page header{
-    background:#0A0A0A !important;
+    background:rgba(10,10,10,0.88);
+    backdrop-filter:blur(8px);
     color:#F4F4EF;
     position:fixed;
     top:0;
