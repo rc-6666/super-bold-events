@@ -414,9 +414,13 @@
     align-items:center;
     padding:36px 0;
     border-bottom:1px solid var(--line);
-    transition:background .3s ease;
+    transition:background .3s ease, padding-left .3s ease;
+    cursor:pointer;
   }
-  .run-row:hover{background:rgba(229,38,27,0.05);}
+  .run-row:hover{
+    background:rgba(229,38,27,0.05);
+    padding-left:12px;
+  }
   .run-time{
     font-family:var(--mono);
     font-size:13px;
@@ -428,6 +432,7 @@
     text-transform:uppercase;
     text-decoration:none;
     color:inherit;
+    cursor:pointer;
   }
   .run-title:hover{
     color:var(--red);
