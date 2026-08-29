@@ -146,7 +146,16 @@
       <div class="run-row reveal">
         <span class="run-time">01</span>
         <div>
-          <a href="services/corporate-events/" class="run-title">Corporate Events</a>
+          <a 
+            href="services/corporate-events/" 
+            class="run-title"
+            onclick="gtag('event', 'service_click', {
+              'event_category': 'engagement', 
+              'event_label': 'corporate_events'
+            });"
+          >
+            Corporate Events
+          </a>
           <ul class="run-points">
             <li>Annual Dinner</li>
             <li>Grand Opening</li>
