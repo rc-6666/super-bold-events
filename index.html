@@ -314,7 +314,7 @@
           <img
             class="event-gallery-image is-active"
             src="images/portfolio/proton-go-202607.jpg"
-            alt="Proton Grand Opening by Super Bold Events"
+            alt="Grand Opening by Super Bold Events"
             loading="lazy"
           >
         </div>
@@ -514,5 +514,162 @@
 
 <script src="js/script.js"></script>
 
+<script>
+(function () {
+  const gallery = document.querySelector('[data-gallery]');
+  if (!gallery) return;
+
+  const image = gallery.querySelector('.event-gallery-image');
+  const prevBtn = gallery.querySelector('.gallery-prev');
+  const nextBtn = gallery.querySelector('.gallery-next');
+  const indexEl = gallery.querySelector('.event-gallery-index');
+  const titleEl = gallery.querySelector('.event-gallery-title');
+  const progressBar = gallery.querySelector('.event-gallery-progress-bar');
+  const frame = gallery.querySelector('.event-gallery-frame');
+
+  const slides = [
+    {
+      src: 'images/portfolio/proton-go-202607.jpg',
+      alt: 'Proton Grand Opening by Super Bold Events',
+      title: 'Grand Opening'
+    },
+    {
+      src: 'images/portfolio/concert-stage.jpg',
+      alt: 'Live Concert by Super Bold Events',
+      title: 'Live Concert'
+    },
+    {
+      src: 'images/portfolio/corporate-dinner.jpg',
+      alt: 'Corporate Dinner by Super Bold Events',
+      title: 'Corporate Dinner'
+    },
+    {
+      src: 'images/portfolio/IP-expo.jpg',
+      alt: 'IP Expo by Super Bold Events',
+      title: 'IP Expo'
+    },
+    {
+      src: 'images/portfolio/led-man.jpg',
+      alt: 'LED Performance by Super Bold Events',
+      title: 'LED Performance'
+    },
+    {
+      src: 'images/portfolio/redbull.jpg',
+      alt: 'Red Bull Activation by Super Bold Events',
+      title: 'Red Bull Activation'
+    },
+    {
+      src: 'images/portfolio/shein.jpg',
+      alt: 'SHEIN Experience by Super Bold Events',
+      title: 'SHEIN Experience'
+    }
+  ];
+
+  let currentIndex = 0;
+  let isAnimating = false;
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  function updateGallery(nextIndex, direction) {
+    if (isAnimating || nextIndex === currentIndex) return;
+
+    isAnimating = true;
+
+    image.style.opacity = '0';
+    image.style.transform =
+      direction === 'next'
+        ? 'translateX(-28px)'
+        : 'translateX(28px)';
+
+    setTimeout(() => {
+      currentIndex = nextIndex;
+
+      const slide = slides[currentIndex];
+
+      image.src = slide.src;
+      image.alt = slide.alt;
+
+      indexEl.textContent =
+        String(currentIndex + 1).padStart(2, '0') +
+        ' / ' +
+        String(slides.length).padStart(2, '0');
+
+      titleEl.textContent = slide.title;
+
+      progressBar.style.width =
+        (((currentIndex + 1) / slides.length) * 100) + '%';
+
+      image.style.transform =
+        direction === 'next'
+          ? 'translateX(28px)'
+          : 'translateX(-28px)';
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          image.style.opacity = '1';
+          image.style.transform = 'translateX(0)';
+        });
+      });
+
+      setTimeout(() => {
+        isAnimating = false;
+      }, 450);
+
+      gtag('event', 'gallery_interaction', {
+        'event_category': 'engagement',
+        'event_label': direction,
+        'gallery_name': 'recent_events',
+        'gallery_index': currentIndex + 1
+      });
+
+    }, 220);
+  }
+
+  function nextSlide() {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    updateGallery(nextIndex, 'next');
+  }
+
+  function previousSlide() {
+    const previousIndex =
+      (currentIndex - 1 + slides.length) % slides.length;
+
+    updateGallery(previousIndex, 'previous');
+  }
+
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', previousSlide);
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowRight') {
+      nextSlide();
+    }
+
+    if (event.key === 'ArrowLeft') {
+      previousSlide();
+    }
+  });
+
+  frame.addEventListener('touchstart', function (event) {
+    touchStartX = event.changedTouches[0].screenX;
+  }, { passive: true });
+
+  frame.addEventListener('touchend', function (event) {
+    touchEndX = event.changedTouches[0].screenX;
+
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) < 50) return;
+
+    if (swipeDistance < 0) {
+      nextSlide();
+    } else {
+      previousSlide();
+    }
+  }, { passive: true });
+
+})();
+</script>
+  
 </body>
 </html>
