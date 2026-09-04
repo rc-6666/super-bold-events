@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Page SEO -->
+  <title>Brand Experience Agency Malaysia | Super Bold Events</title>
+
+  <meta
+    name="description"
+    content="Super Bold Events creates brand experiences in Malaysia through activations, roadshows, launches, pop-ups and immersive experiences that connect brands with people."
+  >
+
+  <link
+    rel="canonical"
+    href="https://superboldevents.com/services/brand-experiences/"
+  >
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="../../images/icons/paw.png"
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CXPTDCN68T">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-CXPTDCN68T');
+  </script>
+
+
+  <!-- =========================================================
+       BRAND EXPERIENCES PAGE STYLES
+       ========================================================= -->
+
+  <style>
+
+    /* =========================================================
+       BRAND PAGE COLOUR SYSTEM
+       ========================================================= */
+
+    :root{
+      --brand-green:#183A35;
+      --brand-green-dark:#102C28;
+      --brand-green-soft:#254A44;
+      --brand-paper:#F4F4EF;
+      --brand-black:#0A0A0A;
+    }
+
+
+    /* =========================================================
+       SERVICE PAGE BASE
+       ========================================================= */
+
+    .brand-page{
+      background:var(--brand-paper);
+      color:var(--brand-black);
+    }
+
+
+    /* =========================================================
+       NAVBAR
+       ========================================================= */
+
+    .brand-page header{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+
+      background:var(--black) !important;
+      color:var(--paper);
+
+      mix-blend-mode:normal !important;
+      opacity:1;
+
+      z-index:100;
+    }
+
+    .brand-page header .nav-mark{
+      color:var(--paper);
+    }
+
+    .brand-page header nav a{
+      color:var(--paper);
+    }
+
+    .brand-page header nav a:hover{
+      color:var(--red);
+    }
+
+    .brand-page header .nav-cta{
+      color:var(--paper);
+      border-color:var(--paper);
+    }
+
+    .brand-page header .nav-cta:hover{
+      background:var(--paper);
+      color:var(--black);
+    }
+
+    .brand-page header .mobile-toggle{
+      color:var(--paper);
+      border-color:var(--paper);
+    }
+
+    .brand-page .mobile-menu{
+      background:var(--black);
+      color:var(--paper);
+    }
+
+    .brand-page .mobile-menu a{
+      color:var(--paper);
+    }
+
+    .brand-page .mobile-menu a:hover{
+      color:var(--red);
+    }
+
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+
+    .brand-hero{
+      position:relative;
+
+      min-height:76vh;
+
+      display:flex;
+      align-items:center;
+
+      padding:150px 32px 90px;
+
+      background:
+        radial-gradient(
+          circle at 78% 22%,
+          rgba(255,255,255,0.08),
+          transparent 28%
+        ),
+        linear-gradient(
+          135deg,
+          var(--brand-green-dark),
+          var(--brand-green)
+        );
+
+      color:var(--brand-paper);
+
+      overflow:hidden;
+    }
+
+
+    .brand-hero::after{
+      content:"02";
+
+      position:absolute;
+      right:5%;
+      bottom:-40px;
+
+      font-family:var(--display);
+      font-size:clamp(180px,28vw,420px);
+
+      line-height:.8;
+
+      color:rgba(244,244,239,0.035);
+
+      pointer-events:none;
+      user-select:none;
+    }
+
+
+    .brand-hero-inner{
+      position:relative;
+      z-index:2;
+
+      width:100%;
+      max-width:1320px;
+
+      margin:0 auto;
+    }
+
+
+    .brand-eyebrow{
+      font-family:var(--mono);
+      font-size:12px;
+
+      letter-spacing:3px;
+      text-transform:uppercase;
+
+      color:#B7D7D0;
+
+      margin-bottom:24px;
+
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+
+    .brand-eyebrow::before{
+      content:"";
+
+      width:30px;
+      height:1px;
+
+      background:var(--red);
+    }
+
+
+    .brand-hero h1{
+      max-width:1050px;
+
+      font-family:var(--display);
+      font-size:clamp(58px,9vw,138px);
+
+      line-height:.88;
+
+      text-transform:uppercase;
+      letter-spacing:-1.5px;
+
+      color:var(--brand-paper);
+    }
+
+
+    .brand-hero h1 .accent{
+      color:var(--red);
+    }
+
+
+    .brand-hero-description{
+      max-width:610px;
+
+      margin-top:36px;
+
+      font-size:18px;
+      line-height:1.7;
+
+      color:rgba(244,244,239,.72);
+    }
+
+
+    .brand-hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+
+      gap:18px;
+
+      margin-top:42px;
+    }
+
+
+    .brand-hero .btn-primary{
+      background:var(--red);
+    }
+
+
+    .brand-hero .btn-primary:hover{
+      background:var(--red-deep);
+    }
+
+
+    .brand-hero .btn-secondary{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+
+      padding:17px 30px;
+
+      border:1px solid rgba(244,244,239,.45);
+      border-radius:999px;
+
+      font-family:var(--mono);
+      font-size:13px;
+
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+
+      color:var(--brand-paper);
+
+      transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+    }
+
+
+    .brand-hero .btn-secondary:hover{
+      background:rgba(244,244,239,.08);
+      border-color:var(--brand-paper);
+
+      transform:translateY(-2px);
+    }
+
+
+    .brand-hero-scroll{
+      position:absolute;
+
+      left:32px;
+      bottom:34px;
+
+      display:flex;
+      align-items:center;
+      gap:10px;
+
+      font-family:var(--mono);
+      font-size:11px;
+
+      text-transform:uppercase;
+      letter-spacing:2px;
+
+      color:rgba(244,244,239,.48);
+
+      z-index:2;
+    }
+
+
+    .brand-hero-scroll .line{
+      width:1px;
+      height:34px;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(244,244,239,.6),
+          transparent
+        );
+    }
+
+
+    /* =========================================================
+       PAPER SECTION
+       ========================================================= */
+
+    .brand-deliver{
+      background:var(--brand-paper);
+      color:var(--brand-black);
+
+      padding:120px 0;
+    }
+
+
+    .brand-deliver .eyebrow{
+      color:var(--red-deep);
+    }
+
+
+    .brand-section-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+
+      gap:40px;
+
+      margin-bottom:60px;
+
+      flex-wrap:wrap;
+    }
+
+
+    .brand-section-head h2{
+      max-width:760px;
+
+      font-family:var(--display);
+      font-size:clamp(40px,5.5vw,72px);
+
+      text-transform:uppercase;
+
+      line-height:.95;
+      letter-spacing:-.7px;
+    }
+
+
+    .brand-section-head p{
+      max-width:380px;
+
+      color:rgba(10,10,10,.58);
+
+      font-size:16px;
+      line-height:1.65;
+    }
+
+
+    /* =========================================================
+       DELIVERY GRID
+       ========================================================= */
+
+    .deliver-grid{
+      display:grid;
+
+      grid-template-columns:repeat(2,1fr);
+
+      gap:1px;
+
+      background:rgba(10,10,10,.15);
+
+      border:1px solid rgba(10,10,10,.15);
+    }
+
+
+    .deliver-card{
+      background:var(--brand-paper);
+
+      padding:42px 36px 46px;
+
+      min-height:250px;
+
+      position:relative;
+
+      transition:
+        background .3s ease,
+        color .3s ease;
+    }
+
+
+    .deliver-card:hover{
+      background:var(--brand-green);
+      color:var(--brand-paper);
+    }
+
+
+    .deliver-number{
+      display:block;
+
+      margin-bottom:58px;
+
+      font-family:var(--mono);
+      font-size:12px;
+
+      letter-spacing:2px;
+
+      color:var(--red-deep);
+    }
+
+
+    .deliver-card:hover .deliver-number{
+      color:#FF6B5F;
+    }
+
+
+    .deliver-card h3{
+      font-family:var(--display);
+
+      font-size:clamp(26px,3vw,38px);
+
+      line-height:.95;
+
+      text-transform:uppercase;
+
+      margin-bottom:16px;
+    }
+
+
+    .deliver-card p{
+      max-width:520px;
+
+      font-size:15px;
+
+      line-height:1.65;
+
+      color:rgba(10,10,10,.62);
+    }
+
+
+    .deliver-card:hover p{
+      color:rgba(244,244,239,.72);
+    }
+
+
+    /* =========================================================
+       EXPERIENCE TYPES
+       ========================================================= */
+
+    .brand-types{
+      background:var(--brand-green);
+      color:var(--brand-paper);
+
+      padding:120px 0;
+    }
+
+
+    .brand-types .eyebrow{
+      color:#B7D7D0;
+    }
+
+
+    .brand-types .brand-section-head h2{
+      color:var(--brand-paper);
+    }
+
+
+    .brand-types .brand-section-head p{
+      color:rgba(244,244,239,.64);
+    }
+
+
+    .experience-list{
+      border-top:1px solid rgba(244,244,239,.18);
+    }
+
+
+    .experience-row{
+      display:grid;
+
+      grid-template-columns:90px 1fr auto;
+
+      gap:30px;
+
+      align-items:center;
+
+      padding:30px 0;
+
+      border-bottom:1px solid rgba(244,244,239,.18);
+
+      transition:
+        background .3s ease,
+        padding-left .3s ease;
+    }
+
+
+    .experience-row:hover{
+      background:rgba(244,244,239,.035);
+
+      padding-left:12px;
+    }
+
+
+    .experience-number{
+      font-family:var(--mono);
+      font-size:12px;
+
+      letter-spacing:2px;
+
+      color:#A7C7C0;
+    }
+
+
+    .experience-title{
+      font-family:var(--display);
+
+      font-size:clamp(28px,4vw,48px);
+
+      line-height:.95;
+
+      text-transform:uppercase;
+
+      color:var(--brand-paper);
+    }
+
+
+    .experience-arrow{
+      width:46px;
+      height:46px;
+
+      border:1px solid rgba(244,244,239,.35);
+      border-radius:50%;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+    }
+
+
+    .experience-arrow svg{
+      width:17px;
+      height:17px;
+
+      fill:none;
+      stroke:currentColor;
+      stroke-width:1.8;
+
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+
+
+    .experience-row:hover .experience-arrow{
+      background:var(--red);
+      border-color:var(--red);
+
+      transform:rotate(45deg);
+    }
+
+
+    /* =========================================================
+       SELECTED WORK
+       ========================================================= */
+
+    .brand-work{
+      background:var(--brand-paper);
+      color:var(--brand-black);
+
+      padding:120px 0;
+    }
+
+
+    .brand-work .eyebrow{
+      color:var(--red-deep);
+    }
+
+
+    .brand-work-grid{
+      display:grid;
+
+      grid-template-columns:repeat(12,1fr);
+
+      gap:20px;
+    }
+
+
+    .brand-work-card{
+      position:relative;
+
+      overflow:hidden;
+
+      border-radius:6px;
+
+      background:var(--brand-black);
+
+      min-height:360px;
+
+      display:flex;
+      align-items:flex-end;
+
+      padding:28px;
+
+      color:var(--brand-paper);
+    }
+
+
+    .brand-work-card:nth-child(1){
+      grid-column:span 7;
+    }
+
+
+    .brand-work-card:nth-child(2){
+      grid-column:span 5;
+    }
+
+
+    .brand-work-card:nth-child(3){
+      grid-column:span 5;
+    }
+
+
+    .brand-work-card:nth-child(4){
+      grid-column:span 7;
+    }
+
+
+    .brand-work-card::after{
+      content:"";
+
+      position:absolute;
+      inset:0;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,.78),
+          rgba(0,0,0,.05) 65%
+        );
+
+      z-index:1;
+    }
+
+
+    .brand-work-card img{
+      position:absolute;
+      inset:0;
+
+      width:100%;
+      height:100%;
+
+      object-fit:cover;
+
+      transition:
+        transform .6s ease;
+    }
+
+
+    .brand-work-card:hover img{
+      transform:scale(1.04);
+    }
+
+
+    .brand-work-content{
+      position:relative;
+      z-index:2;
+    }
+
+
+    .brand-work-tag{
+      display:block;
+
+      margin-bottom:8px;
+
+      font-family:var(--mono);
+      font-size:11px;
+
+      text-transform:uppercase;
+      letter-spacing:1.6px;
+
+      color:#FF665A;
+    }
+
+
+    .brand-work-card h3{
+      font-family:var(--display);
+
+      font-size:clamp(26px,3.2vw,42px);
+
+      line-height:.95;
+
+      text-transform:uppercase;
+    }
+
+
+    /* =========================================================
+       CONTACT CTA
+       ========================================================= */
+
+    .brand-contact{
+      background:var(--brand-black);
+      color:var(--brand-paper);
+
+      padding:150px 0 100px;
+
+      position:relative;
+      overflow:hidden;
+    }
+
+
+    .brand-contact::after{
+      content:"BOLD";
+
+      position:absolute;
+
+      right:-10px;
+      bottom:-60px;
+
+      font-family:var(--display);
+
+      font-size:clamp(180px,26vw,400px);
+
+      line-height:.8;
+
+      color:rgba(229,38,27,.07);
+
+      pointer-events:none;
+      user-select:none;
+    }
+
+
+    .brand-contact-inner{
+      display:grid;
+
+      grid-template-columns:1.25fr 1fr;
+
+      gap:70px;
+
+      position:relative;
+
+      z-index:2;
+    }
+
+
+    .brand-contact h2{
+      font-family:var(--display);
+
+      font-size:clamp(48px,7vw,104px);
+
+      line-height:.92;
+
+      text-transform:uppercase;
+
+      letter-spacing:-1px;
+    }
+
+
+    .brand-contact h2 .accent{
+      color:var(--red);
+    }
+
+
+    .brand-contact-lede{
+      max-width:480px;
+
+      margin-top:28px;
+
+      font-size:17px;
+
+      line-height:1.7;
+
+      color:rgba(244,244,239,.65);
+    }
+
+
+    .brand-contact-actions{
+      margin-top:42px;
+    }
+
+
+    .brand-contact-details{
+      display:flex;
+
+      flex-direction:column;
+
+      align-items:flex-end;
+
+      justify-content:flex-end;
+
+      gap:26px;
+    }
+
+
+    .brand-contact-mark{
+      width:130px;
+      height:130px;
+
+      border:2px solid var(--red);
+
+      border-radius:50%;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      transform:rotate(-8deg);
+    }
+
+
+    .brand-contact-mark img{
+      width:54px;
+      height:54px;
+
+      filter:invert(1);
+    }
+
+
+    .brand-contact-info{
+      font-family:var(--mono);
+
+      font-size:14px;
+
+      line-height:2.05;
+
+      color:rgba(244,244,239,.72);
+
+      text-align:right;
+    }
+
+
+    .brand-contact-info a:hover{
+      color:var(--red);
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .brand-footer{
+      background:var(--brand-black);
+
+      border-top:1px solid var(--line);
+
+      padding:40px 0;
+    }
+
+
+    .brand-footer-row{
+      display:flex;
+
+      justify-content:space-between;
+      align-items:center;
+
+      flex-wrap:wrap;
+
+      gap:18px;
+
+      font-family:var(--mono);
+
+      font-size:12px;
+
+      letter-spacing:1px;
+
+      text-transform:uppercase;
+
+      color:rgba(244,244,239,.5);
+    }
+
+
+    .brand-footer-nav{
+      display:flex;
+
+      gap:24px;
+
+      flex-wrap:wrap;
+    }
+
+
+    .brand-footer-nav a:hover{
+      color:var(--red);
+    }
+
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width:900px){
+
+      .brand-hero{
+        min-height:72vh;
+
+        padding:140px 24px 80px;
+      }
+
+
+      .brand-hero-scroll{
+        left:24px;
+      }
+
+
+      .deliver-grid{
+        grid-template-columns:1fr;
+      }
+
+
+      .brand-section-head{
+        gap:24px;
+        margin-bottom:42px;
+      }
+
+
+      .experience-row{
+        grid-template-columns:58px 1fr auto;
+
+        gap:18px;
+      }
+
+
+      .brand-work-grid{
+        grid-template-columns:1fr;
+      }
+
+
+      .brand-work-card:nth-child(1),
+      .brand-work-card:nth-child(2),
+      .brand-work-card:nth-child(3),
+      .brand-work-card:nth-child(4){
+        grid-column:span 1;
+
+        min-height:300px;
+      }
+
+
+      .brand-contact-inner{
+        grid-template-columns:1fr;
+
+        gap:60px;
+      }
+
+
+      .brand-contact-details{
+        align-items:flex-start;
+      }
+
+
+      .brand-contact-info{
+        text-align:left;
+      }
+
+    }
+
+
+    @media (max-width:560px){
+
+      .brand-hero{
+        min-height:76vh;
+
+        padding:125px 20px 72px;
+      }
+
+
+      .brand-hero h1{
+        font-size:clamp(52px,15vw,78px);
+
+        line-height:.9;
+      }
+
+
+      .brand-hero-description{
+        margin-top:28px;
+
+        font-size:16px;
+      }
+
+
+      .brand-hero-actions{
+        gap:12px;
+      }
+
+
+      .brand-hero .btn-primary,
+      .brand-hero .btn-secondary{
+        width:100%;
+
+        justify-content:center;
+      }
+
+
+      .brand-deliver,
+      .brand-types,
+      .brand-work{
+        padding:88px 0;
+      }
+
+
+      .brand-section-head h2{
+        font-size:42px;
+      }
+
+
+      .deliver-card{
+        padding:34px 24px 38px;
+
+        min-height:230px;
+      }
+
+
+      .deliver-number{
+        margin-bottom:44px;
+      }
+
+
+      .experience-row{
+        grid-template-columns:46px 1fr auto;
+
+        padding:24px 0;
+
+        gap:12px;
+      }
+
+
+      .experience-title{
+        font-size:28px;
+      }
+
+
+      .experience-arrow{
+        width:40px;
+        height:40px;
+      }
+
+
+      .brand-work-card{
+        min-height:260px;
+        padding:22px;
+      }
+
+
+      .brand-contact{
+        padding:110px 0 80px;
+      }
+
+
+      .brand-contact h2{
+        font-size:54px;
+      }
+
+
+      .brand-contact-mark{
+        width:110px;
+        height:110px;
+      }
+
+
+      .brand-footer{
+        padding:30px 0;
+      }
+
+
+      .brand-footer-row{
+        align-items:flex-start;
+        flex-direction:column;
+      }
+
+    }
+
+
+    @media (prefers-reduced-motion:reduce){
+
+      .brand-work-card img,
+      .deliver-card,
+      .experience-row,
+      .experience-arrow,
+      .brand-hero .btn-secondary{
+        transition:none;
+      }
+
+    }
+
+  </style>
+
+
+  <!-- =========================================================
+       STRUCTURED DATA
+       ========================================================= -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Brand Experiences",
+    "serviceType": "Brand Experience Agency",
+    "description": "Brand experiences in Malaysia including brand activations, product launches, roadshows, pop-up experiences, mall and retail activations, and immersive brand experiences.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Super Bold Events PLT",
+      "url": "https://superboldevents.com/"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Malaysia"
+    },
+    "url": "https://superboldevents.com/services/brand-experiences/"
+  }
+  </script>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://superboldevents.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://superboldevents.com/#services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Brand Experiences",
+        "item": "https://superboldevents.com/services/brand-experiences/"
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+
+<body class="service-page brand-page">
+
+
+  <!-- =========================================================
+       NAVIGATION
+       ========================================================= -->
+
+  <header>
+
+    <a
+      href="../../"
+      class="nav-mark"
+      aria-label="Super Bold Events home"
+    >
+      <span class="super">super</span>BOLD
+    </a>
+
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <a
+      href="#contact"
+      class="nav-cta"
+      onclick="gtag('event','cta_click',{
+        'event_category':'engagement',
+        'event_label':'brand_experience_start_project'
+      });"
+    >
+      Start your project
+    </a>
+
+
+    <button
+      class="mobile-toggle"
+      id="mobileToggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      Menu
+    </button>
+
+  </header>
+
+
+  <!-- MOBILE MENU -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <a href="#work">
+      Work
+    </a>
+
+    <a href="#services">
+      Services
+    </a>
+
+    <a href="#contact">
+      Contact
+    </a>
+
+  </div>
+
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+
+  <section class="brand-hero">
+
+    <div class="brand-hero-inner">
+
+      <span class="brand-eyebrow reveal">
+        Brand Experience · Malaysia
+      </span>
+
+
+      <h1 class="reveal">
+        Brand Experiences,
+        <br>
+        Built to Be
+        <span class="accent">Felt.</span>
+      </h1>
+
+
+      <p class="brand-hero-description reveal">
+
+        We turn brand ideas into physical experiences people can see,
+        feel and remember.
+
+        From launches and activations to roadshows, pop-ups and
+        immersive brand moments, we bring strategy, creativity and
+        execution together under one team.
+
+      </p>
+
+
+      <div class="brand-hero-actions reveal">
+
+        <a
+          href="#contact"
+          class="btn-primary"
+          onclick="gtag('event','cta_click',{
+            'event_category':'engagement',
+            'event_label':'brand_experience_hero'
+          });"
+        >
+          Start Your Project
+
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+
+        </a>
+
+
+        <a
+          href="#work"
+          class="btn-secondary"
+        >
+          See Our Work
+
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="brand-hero-scroll">
+
+      <span>
+        Scroll
+      </span>
+
+      <div class="line"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       WHAT WE DELIVER
+       ========================================================= -->
+
+  <section
+    class="brand-deliver"
+    id="services"
+  >
+
+    <div class="wrap">
+
+
+      <div class="brand-section-head">
+
+        <div>
+
+          <span class="eyebrow reveal">
+            What We Deliver
+          </span>
+
+          <h2 class="reveal">
+            From Brand Idea
+            <br>
+            to Real-World
+            <br>
+            Experience.
+          </h2>
+
+        </div>
+
+
+        <p class="reveal">
+
+          We create physical experiences that make a brand
+          more visible, more engaging and more memorable.
+
+        </p>
+
+      </div>
+
+
+      <div class="deliver-grid">
+
+
+        <!-- 01 -->
+
+        <article class="deliver-card reveal">
+
+          <span class="deliver-number">
+            01
+          </span>
+
+          <h3>
+            Brand Activation
+          </h3>
+
+          <p>
+            Turn attention into participation with physical
+            experiences designed around your brand, audience
+            and campaign objectives.
+          </p>
+
+        </article>
+
+
+        <!-- 02 -->
+
+        <article class="deliver-card reveal">
+
+          <span class="deliver-number">
+            02
+          </span>
+
+          <h3>
+            Product Launch
+          </h3>
+
+          <p>
+            Create launch moments that give new products
+            a stage, a story and a reason for people to
+            remember them.
+          </p>
+
+        </article>
+
+
+        <!-- 03 -->
+
+        <article class="deliver-card reveal">
+
+          <span class="deliver-number">
+            03
+          </span>
+
+          <h3>
+            Roadshow &amp; Pop-Up
+          </h3>
+
+          <p>
+            Bring your brand directly to the audience through
+            mobile, flexible experiences across malls, venues
+            and public spaces.
+          </p>
+
+        </article>
+
+
+        <!-- 04 -->
+
+        <article class="deliver-card reveal">
+
+          <span class="deliver-number">
+            04
+          </span>
+
+          <h3>
+            Experiential Engagement
+          </h3>
+
+          <p>
+            Build moments that invite people to interact,
+            discover and connect with your brand beyond
+            traditional advertising.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       EXPERIENCE TYPES
+       ========================================================= -->
+
+  <section
+    class="brand-types"
+    id="experience-types"
+  >
+
+    <div class="wrap">
+
+
+      <div class="brand-section-head">
+
+        <div>
+
+          <span class="eyebrow reveal">
+            Experience Types
+          </span>
+
+          <h2 class="reveal">
+            Where Brands
+            <br>
+            Become
+            <br>
+            Experiences.
+          </h2>
+
+        </div>
+
+
+        <p class="reveal">
+
+          Different audiences need different ways to
+          experience a brand. We build the format around
+          the objective.
+
+        </p>
+
+      </div>
+
+
+      <div class="experience-list">
+
+
+        <!-- 01 -->
+
+        <div class="experience-row reveal">
+
+          <span class="experience-number">
+            01
+          </span>
+
+          <h3 class="experience-title">
+            Brand Activation
+          </h3>
+
+          <span class="experience-arrow">
+
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+
+          </span>
+
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="experience-row reveal">
+
+          <span class="experience-number">
+            02
+          </span>
+
+          <h3 class="experience-title">
+            Product Launch
+          </h3>
+
+          <span class="experience-arrow">
+
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+
+          </span>
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="experience-row reveal">
+
+          <span class="experience-number">
+            03
+          </span>
+
+          <h3 class="experience-title">
+            Roadshow
+          </h3>
+
+          <span class="experience-arrow">
+
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+
+          </span>
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="experience-row reveal">
+
+          <span class="experience-number">
+            04
+          </span>
+
+          <h3 class="experience-title">
+            Pop-Up Experience
+          </h3>
+
+          <span class="experience-arrow">
+
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+
+          </span>
+
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="experience-row reveal">
+
+          <span class="experience-number">
+            05
+          </span>
+
+          <h3 class="experience-title">
+            Mall &amp; Retail Activation
+          </h3>
+
+          <span class="experience-arrow">
+
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+
+          </span>
+
+        </div>
+
+
+        <!-- 06 -->
+
+        <div class="experience-row reveal">
+
+          <span class="experience-number">
+            06
+          </span>
+
+          <h3 class="experience-title">
+            Immersive Brand Experience
+          </h3>
+
+          <span class="experience-arrow">
+
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       SELECTED WORK
+       ========================================================= -->
+
+  <section
+    class="brand-work"
+    id="work"
+  >
+
+    <div class="wrap">
+
+
+      <div class="brand-section-head">
+
+        <div>
+
+          <span class="eyebrow reveal">
+            Selected Work
+          </span>
+
+          <h2 class="reveal">
+            Brand Moments
+            <br>
+            Made Real.
+          </h2>
+
+        </div>
+
+
+        <p class="reveal">
+
+          A selection of brand-facing experiences
+          across activation, launch, exhibition and
+          physical engagement.
+
+        </p>
+
+      </div>
+
+
+      <div class="brand-work-grid">
+
+
+        <!-- Red Bull -->
+
+        <article class="brand-work-card reveal">
+
+          <img
+            src="../../images/portfolio/redbull.jpg"
+            alt="Red Bull brand activation by Super Bold Events"
+            loading="lazy"
+          >
+
+          <div class="brand-work-content">
+
+            <span class="brand-work-tag">
+              Brand Activation
+            </span>
+
+            <h3>
+              Red Bull
+            </h3>
+
+          </div>
+
+        </article>
+
+
+        <!-- SHEIN -->
+
+        <article class="brand-work-card reveal">
+
+          <img
+            src="../../images/portfolio/shein.jpg"
+            alt="SHEIN brand experience by Super Bold Events"
+            loading="lazy"
+          >
+
+          <div class="brand-work-content">
+
+            <span class="brand-work-tag">
+              Brand Experience
+            </span>
+
+            <h3>
+              SHEIN
+            </h3>
+
+          </div>
+
+        </article>
+
+
+        <!-- Proton -->
+
+        <article class="brand-work-card reveal">
+
+          <img
+            src="../../images/portfolio/proton-go-202607.jpg"
+            alt="Proton grand opening event by Super Bold Events"
+            loading="lazy"
+          >
+
+          <div class="brand-work-content">
+
+            <span class="brand-work-tag">
+              Grand Opening · Brand Experience
+            </span>
+
+            <h3>
+              Proton
+            </h3>
+
+          </div>
+
+        </article>
+
+
+        <!-- IP Expo -->
+
+        <article class="brand-work-card reveal">
+
+          <img
+            src="../../images/portfolio/IP-expo.jpg"
+            alt="IP Expo event experience by Super Bold Events"
+            loading="lazy"
+          >
+
+          <div class="brand-work-content">
+
+            <span class="brand-work-tag">
+              Exhibition · Brand Experience
+            </span>
+
+            <h3>
+              IP Expo
+            </h3>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       CONTACT CTA
+       ========================================================= -->
+
+  <section
+    class="brand-contact"
+    id="contact"
+  >
+
+    <div class="wrap">
+
+      <div class="brand-contact-inner">
+
+
+        <div>
+
+          <h2 class="reveal">
+
+            Ready to Make
+            <br>
+            Your Brand
+            <br>
+            <span class="accent">
+              Feel Different?
+            </span>
+
+          </h2>
+
+
+          <p class="brand-contact-lede reveal">
+
+            Tell us what you're launching, promoting or
+            bringing to life. We'll help turn the idea
+            into an experience people remember.
+
+          </p>
+
+
+          <div class="brand-contact-actions reveal">
+
+            <a
+              href="mailto:hello.superbold@outlook.com"
+              class="btn-primary"
+              onclick="gtag('event','email_click',{
+                'event_category':'lead',
+                'event_label':'brand_experience_email'
+              });"
+            >
+
+              Start Your Project
+
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="brand-contact-details reveal">
+
+
+          <div class="brand-contact-mark">
+
+            <img
+              src="../../images/icons/paw.svg"
+              alt="Super Bold paw mark"
+            >
+
+          </div>
+
+
+          <div class="brand-contact-info">
+
+            <a
+              href="tel:+601130882688"
+              onclick="gtag('event','phone_click',{
+                'event_category':'lead',
+                'event_label':'brand_experience_phone'
+              });"
+            >
+              +6011 - 3088 2688
+            </a>
+
+            <br>
+
+
+            <a
+              href="mailto:hello.superbold@outlook.com"
+              onclick="gtag('event','email_click',{
+                'event_category':'lead',
+                'event_label':'brand_experience_email'
+              });"
+            >
+              hello.superbold@outlook.com
+            </a>
+
+            <br>
+
+
+            No.2A, Jalan Kuchai Jaya 10,
+            <br>
+            Taman Kuchai Jaya,
+            58200 Kuala Lumpur
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="brand-footer">
+
+    <div class="wrap">
+
+      <div class="brand-footer-row">
+
+        <span>
+          © 2026 Super Bold Events PLT (LLP0046799-LGN)
+        </span>
+
+
+        <div class="brand-footer-nav">
+
+          <a href="#work">
+            Work
+          </a>
+
+          <a href="#services">
+            Services
+          </a>
+
+          <a href="#contact">
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Existing site JavaScript -->
+  <script src="../../js/script.js"></script>
+
+
+</body>
+</html>
